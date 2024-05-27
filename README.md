@@ -1,3 +1,6 @@
+
+![Code_8WWCM8ZvaJ](https://github.com/Ivanca/moviento-de-vehiculo/assets/907138/41514003-2a76-402f-87c1-4d691afa1a75)
+
 # Instalacion
 Corre `npm install` y luego `npx tsx index.ts`
 # Arquitectura
