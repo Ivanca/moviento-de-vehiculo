@@ -24,14 +24,16 @@ const startCliApp = async () => {
     ].join('\n'));
 
     while (true) {
-        const commands = await prompt(
+        let commands = await prompt(
             `Por favor escriba los comandos a ejecutar:\n`
         );
-        if (commands === 'h') {
+        commands = commands.trim().toUpperCase();
+        if (commands === 'H') {
             console.log(vehicle.commands.join(';'));
             continue;
         }
-        if (commands === 'q') {
+        if (commands === 'Q') {
+            console.log('Adios!');
             break;
         }
         let parts = commands.split(';');
